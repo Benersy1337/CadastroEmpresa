@@ -1,0 +1,18 @@
+<h1>Empresas Disponíveis</h1>
+
+<script src="/script.js"></script>
+
+<div class="books-box">
+    {{#each books}}
+        <div class="books-box-second">#{{this.id}} - <span class="bold">
+            <a href="/books/{{this.id}}">{{this.title}}</a>
+            </span> - {{this.pageqty}} Funcionários
+        </div>
+            <p><a>Ramo </a>{{this.ramo}}</p>
+            <p><a>Matriz </a>{{this.matriz}}</p>
+            <p><a>CNPJ </a>{{this.cnpj}}</p>
+            <p><a>Filiais </a>{{this.filiais}}</p>
+            <p><a>Tem </a>{{this.idade}} anos </p>
+    {{/each}}
+</div>
+

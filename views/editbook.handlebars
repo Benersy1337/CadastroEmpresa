@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Empresas</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+
+    <body>
+
+        <div class="login-box">
+            
+            <h2>Editar Empresa</h2>
+            <form class="form" action="/books/updatebook" method="POST">
+            <input type="hidden" name="id" value="{{book.id}}">
+
+                <div class="form-control">
+                    <input type="text" name="title" required="" value="{{book.title}}">
+                    <label>Descrição</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="number" name="pageqty" required="" value="{{book.pageqty}}">
+                    <label>Quantidade de Funcionários</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" name="ramo" required="" value="{{book.ramo}}">
+                    <label>Ramo</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" name="matriz" required="" value="{{book.matriz}}">
+                    <label>Localidade da Matriz</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="number" name="cnpj" required="" value="{{book.cnpj}}">
+                    <label>CNPJ</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="number" name="filiais" required="" value="{{book.filiais}}">
+                    <label>Quantidade de Filiais</label>
+                </div>
+
+                <div class="form-control inputano">
+                    <input type="number" name="ano" required="" value="{{book.ano}}">
+                    <label>Em que ano foi Fundada</label>
+                </div>
+
+                <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <input class="buttoncadastrar editargreen buttoncadastro" type="submit" value="Editar">
+                </a>
+            
+            </form>
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Empresas</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+
+    <body>
+
+        <div class="login-box">
+            
+            <h2>Cadastro de Empresas</h2>
+            <form class="form" action="/books/insertbook" method="POST">
+
+                <div class="form-control">
+                    <input type="text" name="title" required="">
+                    <label>Descrição</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="number" name="pageqty" required="">
+                    <label>Quantidade de Funcionários</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" name="ramo" required="">
+                    <label>Ramo</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" name="matriz" required="">
+                    <label>Localidade da Matriz</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="number" name="cnpj" required="">
+                    <label>CNPJ</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="number" name="filiais" required="">
+                    <label>Quantidade de Filiais</label>
+                </div>
+
+                <div class="form-control inputano">
+                    <input type="number" name="ano" required="">
+                    <label>Em que ano foi Fundada</label>
+                </div>
+
+                <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <input class="buttoncadastrar buttoncadastro" type="submit" value="Cadastrar">
+                </a>
+            
+            </form>
+        </div>
+    </body>
+</html>
+
+

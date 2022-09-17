@@ -1,0 +1,35 @@
+<div id="book-page">
+    <a href="/books">Voltar</a>
+    <div class="container login-box">
+        <h1>{{book.title}}</h1>
+        <p>Esta Empresa possui {{book.pageqty}} Funcionários.</p>
+
+        <div class="actions">
+
+            <form action="/books/edit/{{book.id}}">
+
+                <a>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input class="buttoncadastrar editargreen" type="submit" value="Editar">
+                </a> 
+            </form>
+            
+
+            <form action="/books/remove/{{book.id}}"  method="POST">
+
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input class="buttoncadastrar removerred" type="submit" value="Remover">
+                </a> 
+
+            </form>
+        </div>
+
+    </div>
+</div>

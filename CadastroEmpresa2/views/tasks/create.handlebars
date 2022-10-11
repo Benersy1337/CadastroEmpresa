@@ -1,0 +1,42 @@
+<h1>Criando uma Empresa</h1>
+
+<form action="/tasks/add" method="post">
+
+    <div class="form-control">
+        <label for="description">Descrição:</label>
+        <input type="text" name="description" placeholder="Nome da Empresa">
+    </div>
+
+    <div class="form-control">
+        <label for="ramo">Ramo:</label>
+        <input type="text" name="ramo" placeholder="Nome do Ramo">
+    </div>
+
+    <div class="form-control">
+        <label for="funcionarios">Funcionários:</label>
+        <textarea type="number" name="funcionarios" placeholder="Quantidade de Funcionários"></textarea>
+    </div>
+
+    <div class="form-control">
+        <label for="matriz">Matriz:</label>
+        <textarea type="text" name="matriz" placeholder="Localidade da Matriz"></textarea>
+    </div>
+
+    <div class="form-control">
+        <label for="cnpj">CNPJ:</label>
+        <textarea type="number" name="cnpj" placeholder="CNPJ da Empresa"></textarea>
+    </div>
+
+    <div class="form-control">
+        <label for="filiais">Filiais:</label>
+        <textarea type="number" name="filiais" placeholder="Quantidade de Filiais"></textarea>
+    </div>
+
+    <div class="form-control">
+        <label for="fundacao">Fundação:</label>
+        <textarea type="number" name="fundacao" placeholder="Em que ano foi fundada"></textarea>
+    </div>
+
+    <input type="submit" value="Cadastrar">
+
+</form>

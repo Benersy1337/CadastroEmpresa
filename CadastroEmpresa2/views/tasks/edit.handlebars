@@ -1,0 +1,44 @@
+<h1>Editando a tarefa</h1>
+
+<form action="/tasks/edit" method="post">
+
+    <input type="hidden" name="id" value="{{task.id}}">
+
+    <div class="form-control">
+        <label for="description">Descrição:</label>
+        <input type="text" name="description" placeholder="Nome da Empresa" value="{{task.description}}">
+    </div>
+
+    <div class="form-control">
+        <label for="ramo">Ramo:</label>
+        <input type="text" name="ramo" placeholder="Nome do Ramo" value="{{task.ramo}}">
+    </div>
+
+    <div class="form-control">
+        <label for="funcionarios">Funcionários:</label>
+        <input type="number" name="funcionarios" placeholder="Quantidade de Funcionários" value="{{task.funcionarios}}">
+    </div>
+
+    <div class="form-control">
+        <label for="matriz">Matriz:</label>
+        <input type="text" name="matriz" placeholder="Localidade da Matriz" value="{{task.matriz}}">
+    </div>
+
+    <div class="form-control">
+        <label for="cnpj">CNPJ:</label>
+        <input type="number" name="cnpj" placeholder="CNPJ da Empresa" value="{{task.cnpj}}">
+    </div>
+
+    <div class="form-control">
+        <label for="filiais">Filiais:</label>
+        <input type="number" name="filiais" placeholder="Quantidade de Filiais" value="{{task.filiais}}">
+    </div>
+
+    <div class="form-control">
+        <label for="fundacao">Fundação:</label>
+        <input type="number" name="fundacao" placeholder="Em que ano foi fundada" value="{{task.fundacao}}">
+    </div>
+
+    <input type="submit" value="Salvar">
+
+</form>
